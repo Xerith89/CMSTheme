@@ -126,6 +126,18 @@ body {
     color: #f7f9f7;
 }
 
+/*
+Breadcrumb
+*/
+
+.breadcrumb {
+    background: #cccccc;
+    color: #333333;
+}
+
+.breadcrumb a {
+    color: #333333;
+}
 
 
 
