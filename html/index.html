@@ -9,7 +9,8 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  </head>
+    <script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
+</head>
 
   <body>
       <!-- Navbar --> 
@@ -50,7 +51,7 @@
                     </a>
                   
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item " href="#">Add Page</a>
+                      <a type="button" class="dropdown-item" data-toggle="modal" data-target="#addPage">Add Page</a>
                       <a class="dropdown-item " href="#">Add Post</a>
                       <a class="dropdown-item " href="#">Add User</a>
                     </div>
@@ -169,10 +170,60 @@
     </div>
 </section>
 
+<footer id="footer">
+    <p>Copyright AdminStrap, &copy; 2019</p>
+</footer>
 
+<!--Modals-->
+
+<!--Add Page-->
+
+<div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form>
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Page</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Page Title</label>
+                    <input type="text" class="form-control" placeholder="Page Title">
+                </div>
+                <div class="form-group">
+                    <label>Page Body</label>
+                    <textarea name="editor1" class="form-control" placeholder="Page Body"></textarea>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Published
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Meta Tags</label>
+                    <input type="text" class="form-control" placeholder="...Add Some Tags">
+                </div>
+                <div class="form-group">
+                    <label>Meta Description</label>
+                    <input type="text" class="form-control" placeholder="...Add Meta Description">
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
 </main><!-- /.container -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
 </body>
 </html>
