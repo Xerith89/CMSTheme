@@ -148,7 +148,23 @@ Badges
     text-align: center;
     border-radius: 40%;
     float: right;
- 
+}
+
+/*
+SideBar
+*/
+
+.list-group {
+    margin-bottom: 5%;
+}
+
+.card {
+    background: #f4f4f4;
+}
+
+.progress-bar-striped {
+    background-color: #333333;
+    color:#ffffff;
 }
 
 
