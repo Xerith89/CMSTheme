@@ -158,14 +158,22 @@ SideBar
     margin-bottom: 5%;
 }
 
-.card {
-    background: #f4f4f4;
-}
-
 .progress-bar-striped {
     background-color: #333333;
     color:#ffffff;
 }
+
+/*
+Card Deck
+*/
+
+.card-deck .card {
+    padding-top:3%;
+    padding-bottom:5%;
+    background: #f4f4f4;
+    text-align: center;
+}
+
 
 
 
